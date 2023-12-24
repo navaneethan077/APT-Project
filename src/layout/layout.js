@@ -54,7 +54,7 @@ function Layout({children}) {
                                 to={"/student"}>
                                 <div className={'d-flex'}>
                                     <FeatherIcon icon="users" className={!open ? 'me-2' : "ms-1"}/>
-                                    {!open && <div className={''}>Student</div>}
+                                    {!open && <div className={''}>Tasks</div>}
                                 </div>
                             </NavLink>
                         </div>
@@ -70,7 +70,7 @@ function Layout({children}) {
                             </NavLink>
                         </div>
 
-                        <div className={"w-100 px-sm-2"}>
+                        {/* <div className={"w-100 px-sm-2"}>
                             <NavLink
                                 className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
                                 to={"/marks"}>
@@ -79,9 +79,9 @@ function Layout({children}) {
                                     {!open && <div className={''}>Marks</div>}
                                 </div>
                             </NavLink>
-                        </div>
+                        </div> */}
 
-                        <div className={"w-100 px-sm-2"}>
+                        {/* <div className={"w-100 px-sm-2"}>
                             <NavLink
                                 className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
                                 to={"/broadcast"}>
@@ -90,7 +90,7 @@ function Layout({children}) {
                                     {!open && <div className={''}>Broadcast</div>}
                                 </div>
                             </NavLink>
-                        </div>
+                        </div> */}
 
                         <div className={"w-100 px-sm-2"}>
                             <NavLink
@@ -98,12 +98,12 @@ function Layout({children}) {
                                 to={"/qr-scanner"}>
                                 <div className={'d-flex'}>
                                     <FeatherIcon icon="users" className={!open ? 'me-2' : "ms-1"}/>
-                                    {!open && <div className={''}>QR Scanner</div>}
+                                    {!open && <div className={''}>Member </div>}
                                 </div>
                             </NavLink>
                         </div>
 
-                        <div className={"w-100 px-sm-2"}>
+                        {/* <div className={"w-100 px-sm-2"}>
                             <NavLink
                                 className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
                                 to={"/appointment"}>
@@ -112,15 +112,35 @@ function Layout({children}) {
                                     {!open && <div className={''}>Appointment</div>}
                                 </div>
                             </NavLink>
-                        </div>
+                        </div> */}
 
-                        <div className={"w-100 px-sm-2"}>
+                        {/* <div className={"w-100 px-sm-2"}>
                             <NavLink
                                 className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
                                 to={"/payment"}>
                                 <div className={'d-flex'}>
                                     <FeatherIcon icon="credit-card" className={!open ? 'me-2' : "ms-1"}/>
                                     {!open && <div className={''}>Payment & Invoice</div>}
+                                </div>
+                            </NavLink>
+                        </div> */}
+                        <div className={"w-100 px-sm-2"}>
+                            <NavLink
+                                className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
+                                to={"/settings"}>
+                                <div className={'d-flex'}>
+                                    <FeatherIcon icon="settings" className={!open ? 'me-2' : "ms-1"}/>
+                                    {!open && <div className={''}>Settings</div>}
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className={"w-100 px-sm-2"}>
+                            <NavLink
+                                className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
+                                to={"/logout"}>
+                                <div className={'d-flex'}>
+                                    <FeatherIcon icon="log-out" className={!open ? 'me-2' : "ms-1"}/>
+                                    {!open && <div className={''}>Logout</div>}
                                 </div>
                             </NavLink>
                         </div>
@@ -133,21 +153,43 @@ function Layout({children}) {
                                 to={"/settings"}>
                                 <div className={'d-flex'}>
                                     <FeatherIcon icon="settings" className={!open ? 'me-2' : "ms-1"}/>
-                                    {!open && <div className={''}>Settings</div>}
+                                    {!open && <div className={''}>Navaneethan</div>}
+                                </div>
+                            </NavLink>
+                        </div>
+                        
+                        <div className={"w-100 px-sm-2"}>
+                            <NavLink
+                                className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
+                                to={"/settings"}>
+                                <div className={'d-flex'}>
+                                    <FeatherIcon icon="settings" className={!open ? 'me-2' : "ms-1"}/>
+                                    {!open && <div className={''}>Hashan</div>}
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className={"w-100 px-sm-2"}>
+                            <NavLink
+                                className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
+                                to={"/settings"}>
+                                <div className={'d-flex'}>
+                                    <FeatherIcon icon="settings" className={!open ? 'me-2' : "ms-1"}/>
+                                    {!open && <div className={''}>Hashan</div>}
+                                </div>
+                            </NavLink>
+                        </div>
+                        <div className={"w-100 px-sm-2"}>
+                            <NavLink
+                                className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
+                                to={"/settings"}>
+                                <div className={'d-flex'}>
+                                    <FeatherIcon icon="settings" className={!open ? 'me-2' : "ms-1"}/>
+                                    {!open && <div className={''}>Hashan</div>}
                                 </div>
                             </NavLink>
                         </div>
 
-                        <div className={"w-100 px-sm-2"}>
-                            <NavLink
-                                className={({isActive}) => isActive ? "side-menu-item side-menu-active" : "side-menu-item"}
-                                to={"/logout"}>
-                                <div className={'d-flex'}>
-                                    <FeatherIcon icon="log-out" className={!open ? 'me-2' : "ms-1"}/>
-                                    {!open && <div className={''}>Logout</div>}
-                                </div>
-                            </NavLink>
-                        </div>
+                      
 
 
                     </div>
@@ -173,6 +215,7 @@ function Layout({children}) {
 
                                             <img src={Msg}/></a>
                                     </li>
+                                    <div> nava</div>
                                     <li className="nav-item px-2">
                                         <a className="nav-link  position-relative p-0" aria-current="page" href="#">
 
